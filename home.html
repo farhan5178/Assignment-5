@@ -26,7 +26,7 @@
   </div>
   <div class="flex navbar-end gap-2">
     <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="text" placeholder="Search Issues..."  class="input input-bordered">
+    <input id="search-input" type="text" placeholder="Search Issues..."  class="input input-bordered">
     <div class="dropdown dropdown-end">
         <div class="">
           <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
@@ -37,11 +37,6 @@
   </div>
 </div>
 </nav>
-    <!-- Tab Section -->
-   <div id="tabs-container"></div>
-<div id="issue-container" class="grid grid-cols-4 gap-4 mt-5 px-4"></div>
-</div>
-    </div>
 <!-- Header -->
 
 <header class="flex items-center justify-between p-4  bg-base-100 shadow-sm px-10 mt-4">
@@ -49,7 +44,7 @@
     <img class="w-10 h-10" src="./assets/Aperture.png" alt="Logo">
 
     <div class="flex flex-col">
-      <p class="font-bold">50 Issues</p>
+      <p id="total-issues" class="font-bold">50 Issues</p>
       <p class="text-sm text-gray-500">Track and manage your project issues</p>
     </div>
   </div>
@@ -64,6 +59,34 @@
     </p>
   </div>
 </header>
+    <!-- Tab Section -->
+   <div id="tabs-container"></div>
+<div id="issue-container" class="grid grid-cols-4 gap-4 mt-5 px-4"></div>
+</div>
+    </div>
+
+    <!-- Modal -->
+<dialog id="issue_modal" class="modal">
+  <div class="modal-box relative">
+
+    <!-- Close button with icon -->
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle absolute right-2 top-2">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </form>
+
+    <!-- Modal content -->
+    <div id="modal-content"></div>
+
+  </div>
+
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
 
 <!-- Js File er angta  -->
 <script src="./scripts/index.js"></script>
