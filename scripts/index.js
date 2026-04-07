@@ -81,7 +81,11 @@ const displayIssues = (issues) => {
             ? 'border-green-500'
             : 'border-purple-500';
 
-        card.className = `bg-white p-5 rounded-xl shadow-sm border-t-4 ${borderColor} cursor-pointer hover:shadow-lg transition`;
+        card.className = `
+    bg-white p-5 rounded-xl shadow-sm border-t-4 ${borderColor} 
+    cursor-pointer hover:shadow-lg transition 
+    flex flex-col
+`;
 
        //for model opem
         card.addEventListener('click', () => {
