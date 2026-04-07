@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github |Issue </title>
+    <!-- Daisy ui +tailwind css -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Font AweSome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Font Geist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<!-- Styles -->
+ <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <!-- login form  -->
+    <div class="flex flex-col gap-5 items-center justify-center h-screen w-xs mx-auto border-base-300 rounded-box border">
+            <img src="./assets/github-logo.png" alt="">
+            <h1 class="text-2xl font-bold">GitHub Issues Tracker</h1>
+            <p class="text-[#64748B]">Sign in to manage your issues</p>
+
+         <fieldset class="fieldset p-4">
+  
+
+  <label class="label text-black text-medium font-semibold">Username</label>
+  <input id="user-name" type="email" class="input " placeholder="Enter Username" />
+
+  <label class="label text-black text-medium font-semibold">Password</label>
+  <input id="input-pin" type="password" class="input" placeholder="Enter Password" />
+
+  <button id="login-btn" class="btn btn-primary mt-4">Sign In</button>
+</fieldset>
+    </div>
+
+    <script src="./scripts/login.js"></script>
+    
+</body>
+</html>
