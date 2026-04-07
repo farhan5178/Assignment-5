@@ -29,16 +29,16 @@ const displayIssueTab = () => {
 
     const createBtn = (text, filterFn) => {
         const btn = document.createElement('button');
-        btn.className = 'btn btn-primary filter-btn';
+        btn.className = 'btn ';
         btn.textContent = text;
 
        btn.addEventListener('click', () => {
 
     // active style
     document.querySelectorAll('.filter-btn').forEach(b => {
-        b.classList.remove('bg-blue-600', 'text-white');
+       
     });
-    btn.classList.add('bg-blue-600', 'text-white');
+    btn.classList.add('btn-primary');
 
     showLoader(); 
 
