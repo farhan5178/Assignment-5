@@ -18,24 +18,26 @@
 </head>
 <body>  
     <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar bg-base-100 shadow-sm px-10">
-  <div class="flex navbar-start gap-2">
-    <img class="w-10 h-10" src="./assets/github-logo.png" alt="">
+  <nav class="navbar bg-base-100 shadow-sm px-4 md:px-10 flex flex-wrap justify-between items-center">
+  
+  <!--  -->
+  <div class="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+    <img class="w-10 h-10" src="./assets/github-logo.png" alt="GitHub Logo">
     <a class="text-xl font-bold">GitHub Issues Tracker</a>
   </div>
-  <div class="flex navbar-end gap-2">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <input id="search-input" type="text" placeholder="Search Issues..."  class="input input-bordered">
-    <div class="dropdown dropdown-end">
-        <div class="">
-          <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>New Issue</button>
-        </div>
-      
-      
+
+  
+  <div class="flex flex-col sm:flex-row items-center gap-2 mt-2 sm:mt-0 w-full sm:w-auto">
+    <div class="flex items-center gap-2 w-full sm:w-auto">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input id="search-input" type="text" placeholder="Search Issues..." class="input input-bordered w-full sm:w-auto">
     </div>
+
+    <button class="btn btn-primary flex items-center gap-1 justify-center w-full sm:w-auto">
+      <i class="fa-solid fa-plus"></i> New Issue
+    </button>
   </div>
-</div>
+
 </nav>
 <!-- Header -->
 
